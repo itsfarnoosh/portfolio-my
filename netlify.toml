@@ -1,6 +1,7 @@
 [build]
-  publish = "dist/portfolio"
+  base = "portfolio"
   command = "npm install && npm run build"
+  publish = "dist/portfolio"
 
 [[redirects]]
   from = "/*"
