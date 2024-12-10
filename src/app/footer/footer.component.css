@@ -1,0 +1,55 @@
+/* Default Light Mode */
+body {
+    background-color: #f6f8d7;
+    color: #333;
+    transition: all 0.5s ease;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Footer Styling */
+  footer {
+    background-color: rgb(211, 247, 211); /* Light green background */
+    color: #333; /* Dark text */
+    padding: 20px;
+    text-align: center;
+    position: relative; /* To ensure child elements are positioned relative to the footer */
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px 10px 0 0; /* Rounded corners at the top */
+  }
+
+  footer p {
+    margin: 5px 0;
+  }
+
+  footer a {
+    color: #555;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  footer a:hover {
+    color: #000;
+    text-decoration: underline;
+  }
+
+  /* Styling for the Theme Toggle Button */
+  .theme-toggle {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .theme-toggle button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .theme-toggle button:hover {
+    background-color: #388e3c;
+  }
+

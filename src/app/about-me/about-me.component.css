@@ -1,0 +1,194 @@
+/* Ensure the entire page has the same background */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient(180deg, #e3f2e1, #f6f8d7); /* Consistent background */
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  .about, .job-timeline {
+    max-width: 1200px; /* Make it responsive with max width */
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* General section styling */
+  .about {
+    text-align: center;
+    padding: 50px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header styling */
+  header h1 {
+    font-size: 4rem;
+    color: #7cab8a;
+    margin-bottom: 10px;
+  }
+  
+  header h2 {
+    font-size: 2rem;
+    color: #3f6048;
+    margin-bottom: 15px;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    color: #5f7f6e;
+  }
+  
+  /* Profile container */
+  .profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  /* Profile image styling */
+  .profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 40px;
+    object-fit: cover;
+  }
+  
+  /* Profile description styling */
+  .profile-description {
+    max-width: 600px;
+    text-align: left;
+    font-size: 1.2rem;
+    color: #4a6055;
+  }
+  
+  .profile-description p {
+    margin-bottom: 20px;
+  }
+  
+  /* Job Timeline Container */
+  .job-timeline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    gap: 20px; /* Gap between job items */
+  }
+  
+  /* Job Item Styling */
+  .job-item {
+    background-color: #004c40;
+    color: white;
+    padding: 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 350px; /* Adjust the width */
+    height: 80px; /* Adjust the height */
+    position: relative;
+    transition: all 0.3s ease-in-out; /* Smooth transition for size and color */
+  }
+  
+  /* Hover effect for Job Item */
+  .job-item:hover {
+    background-color: #8fc99a; /* Light green when hovered */
+    transform: scale(1.05); /* Slightly bigger on hover */
+  }
+  
+  .job-item h3 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .job-item p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  /* Stagger the items to overlap slightly */
+  .job-item:nth-child(odd) {
+    transform: translateX(-20px);
+  }
+  
+  .job-item:nth-child(even) {
+    transform: translateX(20px);
+  }
+  
+  /* Slight size increase and color change on hover */
+  .job-item span {
+    font-size: 1.5rem;
+    margin-left: auto;
+    padding-left: 20px;
+  }
+  
+  /* Ensure full page scrollability and consistent background */
+  html, body {
+    min-height: 100%;
+    overflow-y: auto;
+  }
+  
+
+/* Life Summary Section Styling */
+.life-summary {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #e3f2e1; /* Light green background */
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.life-summary h2 {
+  font-size: 2.5rem;
+  color: #2c423f;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Skills Section */
+.skills-section {
+  margin-top: 20px;
+}
+
+.skills-section h3 {
+  font-size: 1.5rem;
+  color: #004c40;
+  margin-bottom: 10px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px; /* Space between skill boxes */
+  margin-bottom: 20px;
+}
+
+.skill-box {
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #7cab8a;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skill-box:hover {
+  background-color: #004c40; /* Dark green on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Paragraph Styling */
+.life-summary p {
+  font-size: 1.2rem;
+  color: #4a6055;
+  line-height: 1.6;
+  margin-top: 20px;
+}

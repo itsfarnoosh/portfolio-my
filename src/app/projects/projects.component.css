@@ -1,0 +1,73 @@
+.projects-container {
+    margin-top: 100px; /* Push content below fixed menu */
+    display: flex;
+    flex-direction: column; /* Stack boxes vertically */
+    gap: 20px; /* Space between boxes */
+    padding: 20px;
+  }
+  
+  .project {
+    width: 100%; /* Ensure all boxes take the full width of the container */
+    max-width: 900px; /* Set a consistent max width for larger screens */
+    background-color: #accdb2;
+    padding: 40px; /* Larger padding for bigger boxes */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); /* Slightly larger shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 auto; /* Center-align the boxes */
+  }
+  
+  .project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+  }
+  
+  .project-title {
+    font-size: 2rem; /* Larger title */
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .project-description {
+    font-size: 1.2rem; /* Larger description text */
+    color: #555555;
+    margin-bottom: 20px;
+  }
+  
+  .tools-used {
+    margin-bottom: 20px;
+  }
+  
+  .tools-used h3 {
+    font-size: 1.5rem; /* Larger heading for tools */
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .tool-box {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 15px; /* Increased padding for larger toolboxes */
+    background-color: #f6f8d7;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-button {
+    padding: 12px 25px; /* Larger button */
+    background-color: #7cab8a;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-button:hover {
+    background-color: #004c40;
+  }
+  

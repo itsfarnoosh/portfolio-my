@@ -1,0 +1,15 @@
+<header [ngClass]="{'scrolled': isScrolled, 'hidden': isHidden}">
+    <!-- Toggle switch for Day/Night Mode -->
+    <div class="theme-toggle">
+      <label class="switch">
+        <input type="checkbox" (change)="toggleTheme()" [checked]="isDarkMode" />
+        <span class="slider round"></span>
+      </label>
+    </div>
+    <nav>
+      <a routerLink="/about-me" routerLinkActive="active">About Me</a>
+      <a routerLink="/projects" routerLinkActive="active">Projects</a>
+      <a routerLink="/contact" routerLinkActive="active">Contact</a>
+    </nav>
+  </header>
+  

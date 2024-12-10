@@ -1,0 +1,81 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background: transparent;
+  }
+  
+  .contact-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .contact-description {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  /* Grid layout for contact items */
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust column sizes */
+    gap: 20px; /* Add space between items */
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  /* Contact item styling */
+  .contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    background-color: #8fc99a;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .contact-item:hover {
+    background-color: #004c40;
+    transform: scale(1.1);
+  }
+  
+  .contact-item a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .contact-item i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact-item p {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  /* Specific styling for the email box */
+  .contact-item.email {
+    grid-column: span 2; /* Make the email box take up two columns if necessary */
+    text-align: left;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .contact-grid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Smaller column sizes */
+    }
+  }
+  
